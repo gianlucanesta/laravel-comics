@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('page_title')</title>
 
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-    <header>
-        Ciao sono l'header
-    </header>
+    
+    @include('partials.header')
+
     <main>
         @yield('main_content')
     </main>
-    <footer>
-        Ciao sono il footer
-    </footer>
+
+    @include('partials.footer')
+
+
+
 </body>
 </html>
