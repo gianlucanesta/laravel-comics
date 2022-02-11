@@ -4,16 +4,6 @@ header {
     flex-direction: row;
     position: relative;
 
-
-    .container {
-        width: 70%;
-        display: flex;
-        margin: auto;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
     .header-top {
         position: absolute;
         top: 0px;
@@ -38,7 +28,7 @@ header {
             flex-direction: column;
         
             img {
-                width: 75px;  
+                width: 80px;  
             }  
             
         }
@@ -74,9 +64,7 @@ header {
 
     .header-jumbo {
         width: 100%;
-
-        position: absolute;
-        top: 120px;
+        margin-top: 120px;
 
         .content {
             overflow: hidden;

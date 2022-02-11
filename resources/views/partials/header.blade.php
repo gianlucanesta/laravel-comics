@@ -15,7 +15,7 @@
     </div>
 
     <div class="header-menu">
-        <div class="container">
+        <div class="container space-between d-flex align-items-center">
             <div class="logo">
                 <img src="{{ asset('images/dc-logo.png')}}" alt="Logo DC">
             </div>
@@ -55,7 +55,6 @@
                 </ul>
             </nav>
         </div>
-
     </div>
 
     <div class="header-jumbo">

@@ -5,5 +5,7 @@
 @endsection
 
 @section('main_content')
-    <h1>Ciao sono la homepage</h1>
+    @include('components.series-list', [
+        'comics_array' => $comics_array
+    ])
 @endsection

@@ -1,4 +1,53 @@
 main {
-    position: absolute;
-    top: 520px;
+    position: relative;
+    margin-top: 80px;
+    // border: 1px solid white;
+
+    .series-list {  
+        
+
+        .current-series {
+            position: absolute;
+            padding: 8px 26px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: $primary_color;
+            top: -103px;
+            left: 19.5%;
+            cursor: pointer;
+        }
+        
+        .series {
+            justify-content: center;
+            text-align: center; 
+            display: flex; 
+            flex-wrap: wrap;
+        }
+
+        .serie {
+            width: calc( (100% / 6) - 10px);
+            margin: 5px;
+
+            .square-img {
+                height: 200px;
+                overflow: hidden;
+                cursor: pointer;
+            } 
+            
+            h4 {
+                margin-top: 5px;
+                text-align: center; 
+                text-transform: uppercase;
+            }
+        }
+
+        .load-more {      
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 8px 64px;
+            background-color: $primary_color;
+            cursor: pointer;
+        }
+    }  
 }
