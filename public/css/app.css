@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;
-
-400;700&family=Roboto:wght@300;400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +16,6 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #1c1c1c;
   color: white;
 }
 
@@ -45,7 +42,6 @@ header {
   flex-direction: row;
   position: relative;
 }
-
 header .header-top {
   position: absolute;
   top: 0px;
@@ -55,7 +51,6 @@ header .header-top {
   color: white;
   justify-content: center;
 }
-
 header .header-menu {
   position: absolute;
   top: 20px;
@@ -65,24 +60,19 @@ header .header-menu {
   color: #1c1c1c;
   justify-content: center;
 }
-
 header .header-menu .logo {
   flex-direction: column;
 }
-
 header .header-menu .logo img {
   width: 80px;
 }
-
 header .header-menu nav {
   display: flex;
   justify-content: center;
 }
-
 header .header-menu nav ul {
   display: flex;
 }
-
 header .header-menu nav ul li {
   text-transform: uppercase;
   flex-direction: column;
@@ -90,31 +80,26 @@ header .header-menu nav ul li {
   font-size: 16px;
   font-weight: bold;
 }
-
 header .header-menu nav ul a {
   display: inline-block;
   line-height: 96px;
   color: #1c1c1c;
 }
-
 header .header-menu nav ul a.current {
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
 }
-
 header .header-jumbo {
   width: 100%;
   margin-top: 120px;
 }
-
 header .header-jumbo .content {
   overflow: hidden;
   height: 400px;
 }
-
 header .header-jumbo .content img {
   width: 100%;
-  height: 100%;
+  min-height: 400px;
   -o-object-position: top;
      object-position: top;
   -o-object-fit: cover;
@@ -123,44 +108,43 @@ header .header-jumbo .content img {
 
 main {
   position: relative;
-  margin-top: 80px;
 }
-
+main.dark-bg {
+  background-color: #1c1c1c;
+}
+main.light-bg {
+  background-color: white;
+  color: #1c1c1c;
+}
 main .series-list .current-series {
   position: absolute;
   padding: 8px 26px;
   font-size: 24px;
   font-weight: bold;
   background-color: #0282f9;
-  top: -103px;
-  left: 19.5%;
-  cursor: pointer;
+  top: -23px;
 }
-
 main .series-list .series {
+  padding-top: 80px;
   justify-content: center;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
-
 main .series-list .serie {
   width: calc(16.6666666667% - 10px);
   margin: 5px;
 }
-
 main .series-list .serie .square-img {
   height: 200px;
   overflow: hidden;
   cursor: pointer;
 }
-
 main .series-list .serie h4 {
   margin-top: 5px;
   text-align: center;
   text-transform: uppercase;
 }
-
 main .series-list .load-more {
   font-size: 14px;
   font-weight: bold;
@@ -169,8 +153,118 @@ main .series-list .load-more {
   background-color: #0282f9;
   cursor: pointer;
 }
-
-footer {
-  margin-top: 70px;
+main .comic-details {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+main .comic-details .blue-bar {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  background-color: #0282f9;
+  top: -23px;
+}
+main .comic-details .comic-container {
+  padding-top: 70px;
+  width: 60%;
+  position: relative;
+  border: 1px solid black;
+}
+main .comic-details .comic-container .thumb-box {
+  position: absolute;
+  top: -225px;
+  height: auto;
+  width: auto;
+  border: 1px solid white;
+}
+main .comic-details .comic-container .thumb-box .upper-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 6px;
+  color: white;
+  background-color: #00a9d9;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+main .comic-details .comic-container .thumb-box img {
+  width: 150px;
+}
+main .comic-details .comic-container .thumb-box .lower-banner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 4px 6px;
+  color: white;
+  text-align: center;
+  background-color: #00a9d9;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+main .comic-details .comic-container .adv {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-weight: bold;
+}
+main .comic-details .comic-container .upper-details {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+}
+main .comic-details .comic-container .upper-details .upper-details-left-col {
+  width: 70%;
+  padding-right: 20px;
+  border: 1px solid green;
+  margin: 1px;
+}
+main .comic-details .comic-container .upper-details .upper-details-left-col h1 {
+  text-transform: uppercase;
+}
+main .comic-details .comic-container .upper-details .upper-details-left-col .price-bar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #55ba59;
+  color: white;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+main .comic-details .comic-container .upper-details .upper-details-left-col .price-bar .left-price-bar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .comic-details .comic-container .upper-details .upper-details-left-col .price-bar .right-price-bar {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid gray;
+}
+main .comic-details .comic-container .upper-details .upper-details-left-col .description {
+  font-size: 14px;
+}
+main .comic-details .comic-container .upper-details .upper-details-right-col {
+  width: 30%;
+  border: 1px solid blue;
+  margin: 1px;
+}
+main .comic-details .comic-container .upper-details .upper-details-right-col img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+footer {
+  padding-top: 70px;
+  background-color: #1c1c1c;
+}

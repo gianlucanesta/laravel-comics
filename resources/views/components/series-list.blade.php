@@ -1,8 +1,7 @@
 <section class="series-list">
     
-    <div class="current-series">CURRENT SERIES</div>
-
     <div class="container">
+        <div class="current-series">CURRENT SERIES</div>
                     
         <div class="series">
 

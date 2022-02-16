@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
 
 Route::get('/', function () {
 
@@ -23,4 +27,25 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('homepage');
+
+
+
+
+Route::get('/comic/{id}', function ($id) {
+
+    $comics_array = config('comics');
+    $comic_to_show = false;
+
+    foreach($comics_array as $comic) {
+        if($comic['id'] == $id) {
+            $comic_to_show = $comic;
+        }
+    }
+
+    $data = [
+        'comic_info' => $comic_to_show
+    ];
+
+    return view('comic', $data);
+})->name('comic');

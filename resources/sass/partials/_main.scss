@@ -1,8 +1,18 @@
 main {
     position: relative;
-    margin-top: 80px;
-    // border: 1px solid white;
+    
+    
+    &.dark-bg {
+        background-color: $secondary_color;
+    }
 
+
+    &.light-bg {
+        background-color: white;
+        color: $secondary_color;
+    }
+
+    // Series List
     .series-list {  
         
 
@@ -12,12 +22,11 @@ main {
             font-size: 24px;
             font-weight: bold;
             background-color: $primary_color;
-            top: -103px;
-            left: 19.5%;
-            cursor: pointer;
+            top: -23px;
         }
         
         .series {
+            padding-top: 80px;
             justify-content: center;
             text-align: center; 
             display: flex; 
@@ -50,4 +59,138 @@ main {
             cursor: pointer;
         }
     }  
+
+    // Comic Details
+    .comic-details {
+        height: 500px;
+        
+        display: flex;
+        justify-content: center;
+    
+        .blue-bar {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            background-color: $primary_color;
+            top: -23px;
+        }
+
+        .comic-container {
+            padding-top: 70px;
+            width: 60%;
+            position: relative;
+            
+            border: 1px solid black;
+
+            .thumb-box{
+                position: absolute;
+                top: -225px;
+                height: auto;
+                width: auto;
+                border: 1px solid white;
+                
+
+                .upper-banner {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 4px 6px;
+                    color: white;
+                    background-color: #00a9d9;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                }
+
+                img {
+                    width: 150px;
+                }
+
+                .lower-banner {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 4px 6px;
+                    color: white;
+                    text-align: center;
+                    background-color: #00a9d9;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                }
+            }
+
+            .adv {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .upper-details {
+                border: 1px solid red;
+                display: flex;
+                flex-direction: row;
+              
+                .upper-details-left-col {
+                    width: 70%;
+                    padding-right: 20px;
+                    border: 1px solid green;
+                    margin: 1px;
+
+                    h1 {
+                        text-transform: uppercase;
+                    }
+
+                    .price-bar {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        background-color: #55ba59;
+                        color: white;
+                        height: 40px;
+                        width:100%;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid gray;
+                        
+
+                        .left-price-bar {
+                            width: 70%;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+
+                        .right-price-bar {
+                            width: 30%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-left: 1px solid gray;
+                        }
+                    }
+                    
+                    .description {
+                        font-size: 14px;
+                    }
+                }
+
+                .upper-details-right-col {
+                    width: 30%;
+                    border: 1px solid blue;
+                    margin: 1px;
+
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+
+            }
+        }
+    }
 }
