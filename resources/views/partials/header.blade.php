@@ -27,7 +27,7 @@
                         <a class="{{ Request::route()->getName() === 'characters' ? 'current' : ''}}" href="{{ route('characters')}}">characters</a>
                     </li> 
                     <li>
-                        <a  class="{{ Request::route()->getName() === 'homepage' ? 'current' : ''}}" href="{{ route('homepage')}}">comics</a>
+                        <a  class="{{ Request::route()->getName() === 'homepage' || 'comic' ? 'current' : ''}}" href="{{ route('homepage')}}">comics</a>
                     </li>    
                     <li>
                         <a href="#">movies</a>
