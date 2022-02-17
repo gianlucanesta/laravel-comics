@@ -21,12 +21,13 @@
             </div>
     
             <nav>
+                
                 <ul class="menu-list">
                     <li>
-                        <a href="#">characters</a>
+                        <a class="{{ Request::route()->getName() === 'characters' ? 'current' : ''}}" href="{{ route('characters')}}">characters</a>
                     </li> 
                     <li>
-                        <a  class="current" href="#">comics</a>
+                        <a  class="{{ Request::route()->getName() === 'homepage' ? 'current' : ''}}" href="{{ route('homepage')}}">comics</a>
                     </li>    
                     <li>
                         <a href="#">movies</a>

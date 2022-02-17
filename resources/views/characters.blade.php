@@ -4,6 +4,11 @@
 Characters
 @endsection
 
+@section('main_classes')
+light-bg
+@endsection
+
 @section('main_content')
+
 <h1>Ciao sono la pagina dei Characters</h1>
 @endsection
