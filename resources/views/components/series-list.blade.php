@@ -10,10 +10,12 @@
             
             {{-- Single serie --}}
             <div class="serie">
-                <div class="square-img">
-                    <img src="{{$serie['thumb']}}" alt="{{$serie['title']}}">
-                </div>
-                <h4>{{$serie['title']}}</h4>
+                <a href="{{ route('comic', ['id' => $serie['id']])}}">
+                    <div class="square-img">
+                        <img src="{{$serie['thumb']}}" alt="{{$serie['title']}}">
+                    </div>
+                    <h4>{{$serie['title']}}</h4>
+                </a>
             </div>
             {{-- End Single serie --}}
             @endforeach

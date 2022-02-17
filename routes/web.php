@@ -43,6 +43,10 @@ Route::get('/comic/{id}', function ($id) {
         }
     }
 
+    if(!$comic_to_show) {
+        abort('404');
+    }
+
     $data = [
         'comic_info' => $comic_to_show
     ];
